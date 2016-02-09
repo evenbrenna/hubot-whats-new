@@ -27,7 +27,7 @@ module.exports = (robot) ->
       return msg.send "You must set the following environment variables: GITHUB_USERNAME, GITHUB_APIKEY, GITHUB_USER, GITHUB_REPOS"
 
     # Authenticated root URL of Github API
-    rootUrl = "https://#{userName}:#{key}@api.github.com"
+    rootUrl = "https://#{userName}:#{APIKey}@api.github.com"
 
     # Parse message
     version = ""
