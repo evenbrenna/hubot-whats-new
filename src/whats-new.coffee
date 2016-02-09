@@ -23,7 +23,7 @@ module.exports = (robot) ->
     user     = process.env.GITHUB_USER
     repos    = process.env.GITHUB_REPOS
 
-    if !userName || !APIKey || user || repos
+    if !userName || !APIKey || !user || !repos
       return msg.send "You must set the following environment variables: GITHUB_USERNAME, GITHUB_APIKEY, GITHUB_USER, GITHUB_REPOS"
 
     # Authenticated root URL of Github API
