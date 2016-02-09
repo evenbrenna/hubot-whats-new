@@ -1,7 +1,7 @@
 {
   "name": "hubot-whats-new",
   "description": "A hubot script that lists all commits since the latest (or given) version/tag",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Even Brenna <evenbrenna@gmail.com>",
   "license": "MIT",
   "keywords": [

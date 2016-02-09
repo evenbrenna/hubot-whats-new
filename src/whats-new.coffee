@@ -53,7 +53,7 @@ module.exports = (robot) ->
 
         # Get commits since given tag
         branch = process.env.GITHUB_BRANCH || "master"
-        robot.http("#{rootUrl}/repos/soundioas/#{repo}/compare/#{version}...#{branch}")
+        robot.http("#{rootUrl}/repos/#{user}/#{repo}/compare/#{version}...#{branch}")
           .get() (err, res, body) ->
             if err
               return msg.send "Ran into some trouble: #{err}"
