@@ -7,8 +7,8 @@ A hubot script to quickly see what's going on in your Github repo(s). Lists all 
 You   : hubot what's new in AwesomeProject
 
 Hubot : There have been 2 commits to AwesomeProject's master branch since v1.0.0:
-        > Complete awesome bugix (Murdock)
-        > Start awesome bugix (Baracus)
+        - Complete awesome bugix (Murdock)
+        - Start awesome bugix (Baracus)
 
         Diff on Github:
         https://github.com/org/repo/compare/v1.0.0...master
@@ -18,10 +18,10 @@ Hubot : There have been 2 commits to AwesomeProject's master branch since v1.0.0
 You   : hubot what's new in AwesomeProject since v0.9.3
 
 Hubot : There have been 4 commits to AwesomeProject's master branch since v0.9.3:
-        > Complete awesome bugix (Murdock)
-        > Start awesome bugix (Baracus)
-        > Complete v1 (Hannibal)
-        > Start awesomeness (Face)
+        - Complete awesome bugix (Murdock)
+        - Start awesome bugix (Baracus)
+        - Complete v1 (Hannibal)
+        - Start awesomeness (Face)
 
         Diff on Github:
         https://github.com/org/repo/compare/v0.9.3...master

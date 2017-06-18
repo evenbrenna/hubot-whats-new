@@ -35,7 +35,7 @@ module.exports = (robot) ->
     repo = words[0].toLowerCase()
 
     if repo not in repos.split ","
-      return msg.send "Don't know, don't care about #{words[0]}.. (Have you set GITHUB_REPOS to a lowercase, comma separated (no spaces) list of repo names?)"
+      return msg.send "I don't know about #{words[0]}.. (Have you set GITHUB_REPOS to a lowercase, comma separated (no spaces) list of repo names?)"
 
     # Set version to latest or given tag
     robot.http("#{rootUrl}/repos/#{user}/#{repo}/tags")
@@ -73,8 +73,8 @@ module.exports = (robot) ->
 
             if numCommits > 0
               for commit in response.commits
-                message = commit.commit.message.split("\n\n").join(": ")
-                commitString = "\n> #{message} (#{commit.commit.author.name})"
+                message = commit.commit.message.split("\n\n")[0]
+                commitString = "\n- #{message} (#{commit.commit.author.name})"
                 answer += commitString
               answer += "\n\nSee diff on GitHub here: #{response.html_url}"
             msg.send answer
